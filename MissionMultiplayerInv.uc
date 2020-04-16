@@ -198,7 +198,7 @@ simulated function Timer()
 					if (C != None && C.Pawn != None && C.Pawn.Health > 0 && C.IsA('PlayerController') && C.SameTeamAs(PawnOwner.Controller) )
 						PlayerController(C).ClientPlaySound(Sound'DEKRPG208C.MissionSounds.MP3VoiceTimeUp');
 						
-				//Certain missions do not have a mission goal, and we don't want to penalize players by not reaching a goal that hasn't been set
+				//Certain missions do not have a mission goal, and we don't want to penalize players for not reaching a goal that hasn't been set
 				//StopMission() will end the mission in a Mission Failed state for those missions that indeed have a goal
 				if (GenomeProjectActive)
 				{
@@ -636,19 +636,19 @@ simulated function Destroyed()
 
 defaultproperties
 {
-	 MusicalChangeChance=10
-	 MusicalMinimumTime=5
-	 MusicalWeaponsList(0)=class'DEKWeapons208C.INAVRiL'
-	 MusicalWeaponsList(1)=class'XWeapons.BioRifle'
-	 MusicalWeaponsList(2)=class'XWeapons.ShockRifle'
-	 MusicalWeaponsList(3)=class'UT2004RPG.RPGLinkGun'
-	 MusicalWeaponsList(4)=class'XWeapons.Minigun'
-	 MusicalWeaponsList(5)=class'XWeapons.FlakCannon'
-	 MusicalWeaponsList(6)=class'XWeapons.RocketLauncher'
-	 MusicalWeaponsList(7)=class'XWeapons.SniperRifle'
-     CheckInterval=1.000000
-	 Countdown=10
-	 ExpForWinAdd=10
-	 GenomeXPPerVial=5
-     MessageClass=Class'UnrealGame.StringMessagePlus'
+	MusicalChangeChance=10
+	MusicalMinimumTime=5
+	MusicalWeaponsList(0)=class'DEKWeapons208C.INAVRiL'
+	MusicalWeaponsList(1)=class'XWeapons.BioRifle'
+	MusicalWeaponsList(2)=class'XWeapons.ShockRifle'
+	MusicalWeaponsList(3)=class'UT2004RPG.RPGLinkGun'
+	MusicalWeaponsList(4)=class'XWeapons.Minigun'
+	MusicalWeaponsList(5)=class'XWeapons.FlakCannon'
+	MusicalWeaponsList(6)=class'XWeapons.RocketLauncher'
+	MusicalWeaponsList(7)=class'XWeapons.SniperRifle'
+	CheckInterval=1.000000
+	Countdown=10
+	ExpForWinAdd=10
+	GenomeXPPerVial=5
+	MessageClass=Class'UnrealGame.StringMessagePlus'
 }
